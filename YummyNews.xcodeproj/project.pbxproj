@@ -8,13 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		64F3213B26D1658F00546EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3213A26D1658F00546EB1 /* AppDelegate.swift */; };
-		64F3213D26D1658F00546EB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3213C26D1658F00546EB1 /* SceneDelegate.swift */; };
 		64F3213F26D1658F00546EB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3213E26D1658F00546EB1 /* ViewController.swift */; };
 		64F3214226D1658F00546EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F3214026D1658F00546EB1 /* Main.storyboard */; };
 		64F3214426D1659200546EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F3214326D1659200546EB1 /* Assets.xcassets */; };
 		64F3214726D1659200546EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F3214526D1659200546EB1 /* LaunchScreen.storyboard */; };
 		64F3215226D1659200546EB1 /* YummyNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3215126D1659200546EB1 /* YummyNewsTests.swift */; };
 		64F3215D26D1659200546EB1 /* YummyNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3215C26D1659200546EB1 /* YummyNewsUITests.swift */; };
+		64F3217126D1669300546EB1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3216E26D1669300546EB1 /* Constant.swift */; };
+		64F3217226D1669300546EB1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217026D1669300546EB1 /* ErrorHandler.swift */; };
+		64F3217D26D166B000546EB1 /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217526D166B000546EB1 /* ViewController+.swift */; };
+		64F3217E26D166B000546EB1 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217626D166B000546EB1 /* NSObject+.swift */; };
+		64F3217F26D166B000546EB1 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217726D166B000546EB1 /* String+.swift */; };
+		64F3218026D166B000546EB1 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217826D166B000546EB1 /* UIStackView+.swift */; };
+		64F3218126D166B000546EB1 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217926D166B000546EB1 /* UIImageView+.swift */; };
+		64F3218226D166B000546EB1 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217A26D166B000546EB1 /* View+.swift */; };
+		64F3218326D166B000546EB1 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217B26D166B000546EB1 /* UIImage+.swift */; };
+		64F3218426D166B000546EB1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3217C26D166B000546EB1 /* UIColor+.swift */; };
+		64F321A326D166DF00546EB1 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3218A26D166DF00546EB1 /* ErrorTracker.swift */; };
+		64F321A426D166DF00546EB1 /* ActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3218B26D166DF00546EB1 /* ActivityTracker.swift */; };
+		64F321A526D166DF00546EB1 /* DomainConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3218D26D166DF00546EB1 /* DomainConvertible.swift */; };
+		64F321A626D166DF00546EB1 /* DomainErrorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3218E26D166DF00546EB1 /* DomainErrorConvertible.swift */; };
+		64F321A726D166DF00546EB1 /* MovieInjectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219026D166DF00546EB1 /* MovieInjectorType.swift */; };
+		64F321A826D166DF00546EB1 /* StarWarInjectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219126D166DF00546EB1 /* StarWarInjectorType.swift */; };
+		64F321A926D166DF00546EB1 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219326D166DF00546EB1 /* ProjectError.swift */; };
+		64F321AA26D166DF00546EB1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219526D166DF00546EB1 /* Movie.swift */; };
+		64F321AB26D166DF00546EB1 /* MovieAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219626D166DF00546EB1 /* MovieAttribute.swift */; };
+		64F321AC26D166DF00546EB1 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219726D166DF00546EB1 /* MovieDetail.swift */; };
+		64F321AE26D166DF00546EB1 /* Rx+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219A26D166DF00546EB1 /* Rx+.swift */; };
+		64F321AF26D166DF00546EB1 /* ExtendApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219C26D166DF00546EB1 /* ExtendApplication.swift */; };
+		64F321B026D166DF00546EB1 /* ExtendApplication+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3219D26D166DF00546EB1 /* ExtendApplication+Services.swift */; };
+		64F321B126D166DF00546EB1 /* BlockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321A026D166DF00546EB1 /* BlockUseCase.swift */; };
+		64F321B226D166DF00546EB1 /* StarWarUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321A126D166DF00546EB1 /* StarWarUserCase.swift */; };
+		64F321B326D166DF00546EB1 /* MovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321A226D166DF00546EB1 /* MovieUseCase.swift */; };
+		64F321D726D166E500546EB1 /* MovieAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321B726D166E500546EB1 /* MovieAPIRouter.swift */; };
+		64F321D926D166E500546EB1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321BC26D166E500546EB1 /* Network.swift */; };
+		64F321DA26D166E500546EB1 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321BD26D166E500546EB1 /* Configs.swift */; };
+		64F321DB26D166E500546EB1 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321BE26D166E500546EB1 /* NetworkLogger.swift */; };
+		64F321DC26D166E500546EB1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321BF26D166E500546EB1 /* NetworkError.swift */; };
+		64F321DD26D166E500546EB1 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C026D166E500546EB1 /* NetworkConfiguration.swift */; };
+		64F321DE26D166E500546EB1 /* RequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C226D166E500546EB1 /* RequestConvertible.swift */; };
+		64F321DF26D166E500546EB1 /* HTTPEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C326D166E500546EB1 /* HTTPEncoder.swift */; };
+		64F321E026D166E500546EB1 /* EndpointConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C426D166E500546EB1 /* EndpointConvertible.swift */; };
+		64F321E126D166E500546EB1 /* Single+Decodable+BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C626D166E500546EB1 /* Single+Decodable+BaseResponse.swift */; };
+		64F321E226D166E500546EB1 /* Single+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C726D166E500546EB1 /* Single+Validation.swift */; };
+		64F321E326D166E500546EB1 /* Single+DomainMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C826D166E500546EB1 /* Single+DomainMapping.swift */; };
+		64F321E426D166E500546EB1 /* Single+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321C926D166E500546EB1 /* Single+Decodable.swift */; };
+		64F321E526D166E500546EB1 /* Sequence+DomainMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321CA26D166E500546EB1 /* Sequence+DomainMapping.swift */; };
+		64F321E626D166E500546EB1 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321CD26D166E500546EB1 /* MovieModel.swift */; };
+		64F321E726D166E500546EB1 /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321CE26D166E500546EB1 /* MovieDetailModel.swift */; };
+		64F321E826D166E500546EB1 /* StarShipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321D026D166E500546EB1 /* StarShipsModel.swift */; };
+		64F321E926D166E500546EB1 /* StarShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321D126D166E500546EB1 /* StarShipModel.swift */; };
+		64F321EA26D166E500546EB1 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321D426D166E500546EB1 /* MovieService.swift */; };
+		64F321EB26D166E500546EB1 /* StarWarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321D626D166E500546EB1 /* StarWarService.swift */; };
+		64F321ED26D1672F00546EB1 /* YummyNewsApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321EC26D1672F00546EB1 /* YummyNewsApplication.swift */; };
+		64F321F226D1674800546EB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321F126D1674800546EB1 /* HomeViewController.swift */; };
+		64F321F426D1675000546EB1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F321F326D1675000546EB1 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +85,6 @@
 /* Begin PBXFileReference section */
 		64F3213726D1658F00546EB1 /* YummyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F3213A26D1658F00546EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64F3213C26D1658F00546EB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		64F3213E26D1658F00546EB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64F3214126D1658F00546EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64F3214326D1659200546EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +96,55 @@
 		64F3215826D1659200546EB1 /* YummyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YummyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F3215C26D1659200546EB1 /* YummyNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummyNewsUITests.swift; sourceTree = "<group>"; };
 		64F3215E26D1659200546EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F3216E26D1669300546EB1 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		64F3217026D1669300546EB1 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		64F3217526D166B000546EB1 /* ViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
+		64F3217626D166B000546EB1 /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		64F3217726D166B000546EB1 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		64F3217826D166B000546EB1 /* UIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		64F3217926D166B000546EB1 /* UIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		64F3217A26D166B000546EB1 /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		64F3217B26D166B000546EB1 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		64F3217C26D166B000546EB1 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		64F3218A26D166DF00546EB1 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		64F3218B26D166DF00546EB1 /* ActivityTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTracker.swift; sourceTree = "<group>"; };
+		64F3218D26D166DF00546EB1 /* DomainConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertible.swift; sourceTree = "<group>"; };
+		64F3218E26D166DF00546EB1 /* DomainErrorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainErrorConvertible.swift; sourceTree = "<group>"; };
+		64F3219026D166DF00546EB1 /* MovieInjectorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInjectorType.swift; sourceTree = "<group>"; };
+		64F3219126D166DF00546EB1 /* StarWarInjectorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarInjectorType.swift; sourceTree = "<group>"; };
+		64F3219326D166DF00546EB1 /* ProjectError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
+		64F3219526D166DF00546EB1 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		64F3219626D166DF00546EB1 /* MovieAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAttribute.swift; sourceTree = "<group>"; };
+		64F3219726D166DF00546EB1 /* MovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		64F3219A26D166DF00546EB1 /* Rx+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rx+.swift"; sourceTree = "<group>"; };
+		64F3219C26D166DF00546EB1 /* ExtendApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendApplication.swift; sourceTree = "<group>"; };
+		64F3219D26D166DF00546EB1 /* ExtendApplication+Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtendApplication+Services.swift"; sourceTree = "<group>"; };
+		64F321A026D166DF00546EB1 /* BlockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockUseCase.swift; sourceTree = "<group>"; };
+		64F321A126D166DF00546EB1 /* StarWarUserCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarUserCase.swift; sourceTree = "<group>"; };
+		64F321A226D166DF00546EB1 /* MovieUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieUseCase.swift; sourceTree = "<group>"; };
+		64F321B726D166E500546EB1 /* MovieAPIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPIRouter.swift; sourceTree = "<group>"; };
+		64F321BC26D166E500546EB1 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		64F321BD26D166E500546EB1 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		64F321BE26D166E500546EB1 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		64F321BF26D166E500546EB1 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		64F321C026D166E500546EB1 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		64F321C226D166E500546EB1 /* RequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestConvertible.swift; sourceTree = "<group>"; };
+		64F321C326D166E500546EB1 /* HTTPEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPEncoder.swift; sourceTree = "<group>"; };
+		64F321C426D166E500546EB1 /* EndpointConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointConvertible.swift; sourceTree = "<group>"; };
+		64F321C626D166E500546EB1 /* Single+Decodable+BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Decodable+BaseResponse.swift"; sourceTree = "<group>"; };
+		64F321C726D166E500546EB1 /* Single+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Validation.swift"; sourceTree = "<group>"; };
+		64F321C826D166E500546EB1 /* Single+DomainMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+DomainMapping.swift"; sourceTree = "<group>"; };
+		64F321C926D166E500546EB1 /* Single+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Decodable.swift"; sourceTree = "<group>"; };
+		64F321CA26D166E500546EB1 /* Sequence+DomainMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+DomainMapping.swift"; sourceTree = "<group>"; };
+		64F321CD26D166E500546EB1 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		64F321CE26D166E500546EB1 /* MovieDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
+		64F321D026D166E500546EB1 /* StarShipsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarShipsModel.swift; sourceTree = "<group>"; };
+		64F321D126D166E500546EB1 /* StarShipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarShipModel.swift; sourceTree = "<group>"; };
+		64F321D426D166E500546EB1 /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		64F321D626D166E500546EB1 /* StarWarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarService.swift; sourceTree = "<group>"; };
+		64F321EC26D1672F00546EB1 /* YummyNewsApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummyNewsApplication.swift; sourceTree = "<group>"; };
+		64F321F126D1674800546EB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		64F321F326D1675000546EB1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				64F3213926D1658F00546EB1 /* YummyNews */,
+				64F3218726D166DF00546EB1 /* Domain */,
+				64F321B426D166E500546EB1 /* NetworkModule */,
 				64F3215026D1659200546EB1 /* YummyNewsTests */,
 				64F3215B26D1659200546EB1 /* YummyNewsUITests */,
 				64F3213826D1658F00546EB1 /* Products */,
@@ -99,8 +197,10 @@
 		64F3213926D1658F00546EB1 /* YummyNews */ = {
 			isa = PBXGroup;
 			children = (
-				64F3213A26D1658F00546EB1 /* AppDelegate.swift */,
-				64F3213C26D1658F00546EB1 /* SceneDelegate.swift */,
+				64F3218626D166C000546EB1 /* Modules */,
+				64F3218526D166B600546EB1 /* Application */,
+				64F3216C26D1669300546EB1 /* Shared */,
+				64F3217326D166B000546EB1 /* Helper */,
 				64F3213E26D1658F00546EB1 /* ViewController.swift */,
 				64F3214026D1658F00546EB1 /* Main.storyboard */,
 				64F3214326D1659200546EB1 /* Assets.xcassets */,
@@ -126,6 +226,322 @@
 				64F3215E26D1659200546EB1 /* Info.plist */,
 			);
 			path = YummyNewsUITests;
+			sourceTree = "<group>";
+		};
+		64F3216C26D1669300546EB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				64F3216D26D1669300546EB1 /* Constant */,
+				64F3216F26D1669300546EB1 /* ErrorHanding */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		64F3216D26D1669300546EB1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				64F3216E26D1669300546EB1 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		64F3216F26D1669300546EB1 /* ErrorHanding */ = {
+			isa = PBXGroup;
+			children = (
+				64F3217026D1669300546EB1 /* ErrorHandler.swift */,
+			);
+			path = ErrorHanding;
+			sourceTree = "<group>";
+		};
+		64F3217326D166B000546EB1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				64F3217426D166B000546EB1 /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		64F3217426D166B000546EB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64F3217526D166B000546EB1 /* ViewController+.swift */,
+				64F3217626D166B000546EB1 /* NSObject+.swift */,
+				64F3217726D166B000546EB1 /* String+.swift */,
+				64F3217826D166B000546EB1 /* UIStackView+.swift */,
+				64F3217926D166B000546EB1 /* UIImageView+.swift */,
+				64F3217A26D166B000546EB1 /* View+.swift */,
+				64F3217B26D166B000546EB1 /* UIImage+.swift */,
+				64F3217C26D166B000546EB1 /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64F3218526D166B600546EB1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				64F3213A26D1658F00546EB1 /* AppDelegate.swift */,
+				64F321EC26D1672F00546EB1 /* YummyNewsApplication.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		64F3218626D166C000546EB1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				64F321EE26D1673500546EB1 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		64F3218726D166DF00546EB1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				64F3218826D166DF00546EB1 /* Shared */,
+				64F3219426D166DF00546EB1 /* Models */,
+				64F3219926D166DF00546EB1 /* Extensions */,
+				64F3219B26D166DF00546EB1 /* Application */,
+				64F3219E26D166DF00546EB1 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		64F3218826D166DF00546EB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				64F3218926D166DF00546EB1 /* Utils */,
+				64F3218C26D166DF00546EB1 /* Adapters */,
+				64F3219226D166DF00546EB1 /* Validation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		64F3218926D166DF00546EB1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				64F3218A26D166DF00546EB1 /* ErrorTracker.swift */,
+				64F3218B26D166DF00546EB1 /* ActivityTracker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		64F3218C26D166DF00546EB1 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				64F3218D26D166DF00546EB1 /* DomainConvertible.swift */,
+				64F3218E26D166DF00546EB1 /* DomainErrorConvertible.swift */,
+				64F3218F26D166DF00546EB1 /* Injector */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		64F3218F26D166DF00546EB1 /* Injector */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219026D166DF00546EB1 /* MovieInjectorType.swift */,
+				64F3219126D166DF00546EB1 /* StarWarInjectorType.swift */,
+			);
+			path = Injector;
+			sourceTree = "<group>";
+		};
+		64F3219226D166DF00546EB1 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219326D166DF00546EB1 /* ProjectError.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		64F3219426D166DF00546EB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219526D166DF00546EB1 /* Movie.swift */,
+				64F3219626D166DF00546EB1 /* MovieAttribute.swift */,
+				64F3219726D166DF00546EB1 /* MovieDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64F3219926D166DF00546EB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219A26D166DF00546EB1 /* Rx+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64F3219B26D166DF00546EB1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219C26D166DF00546EB1 /* ExtendApplication.swift */,
+				64F3219D26D166DF00546EB1 /* ExtendApplication+Services.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		64F3219E26D166DF00546EB1 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				64F3219F26D166DF00546EB1 /* Home */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		64F3219F26D166DF00546EB1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64F321A026D166DF00546EB1 /* BlockUseCase.swift */,
+				64F321A126D166DF00546EB1 /* StarWarUserCase.swift */,
+				64F321A226D166DF00546EB1 /* MovieUseCase.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		64F321B426D166E500546EB1 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				64F321B526D166E500546EB1 /* APIRouters */,
+				64F321BA26D166E500546EB1 /* Shared */,
+				64F321CB26D166E500546EB1 /* Models */,
+				64F321D226D166E500546EB1 /* Services */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		64F321B526D166E500546EB1 /* APIRouters */ = {
+			isa = PBXGroup;
+			children = (
+				64F321B626D166E500546EB1 /* Movies */,
+			);
+			path = APIRouters;
+			sourceTree = "<group>";
+		};
+		64F321B626D166E500546EB1 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				64F321B726D166E500546EB1 /* MovieAPIRouter.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		64F321BA26D166E500546EB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				64F321BB26D166E500546EB1 /* Core */,
+				64F321C126D166E500546EB1 /* Converter */,
+				64F321C526D166E500546EB1 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		64F321BB26D166E500546EB1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				64F321BC26D166E500546EB1 /* Network.swift */,
+				64F321BD26D166E500546EB1 /* Configs.swift */,
+				64F321BE26D166E500546EB1 /* NetworkLogger.swift */,
+				64F321BF26D166E500546EB1 /* NetworkError.swift */,
+				64F321C026D166E500546EB1 /* NetworkConfiguration.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64F321C126D166E500546EB1 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				64F321C226D166E500546EB1 /* RequestConvertible.swift */,
+				64F321C326D166E500546EB1 /* HTTPEncoder.swift */,
+				64F321C426D166E500546EB1 /* EndpointConvertible.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		64F321C526D166E500546EB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64F321C626D166E500546EB1 /* Single+Decodable+BaseResponse.swift */,
+				64F321C726D166E500546EB1 /* Single+Validation.swift */,
+				64F321C826D166E500546EB1 /* Single+DomainMapping.swift */,
+				64F321C926D166E500546EB1 /* Single+Decodable.swift */,
+				64F321CA26D166E500546EB1 /* Sequence+DomainMapping.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64F321CB26D166E500546EB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64F321CC26D166E500546EB1 /* Movie */,
+				64F321CF26D166E500546EB1 /* StarWar */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64F321CC26D166E500546EB1 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				64F321CD26D166E500546EB1 /* MovieModel.swift */,
+				64F321CE26D166E500546EB1 /* MovieDetailModel.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		64F321CF26D166E500546EB1 /* StarWar */ = {
+			isa = PBXGroup;
+			children = (
+				64F321D026D166E500546EB1 /* StarShipsModel.swift */,
+				64F321D126D166E500546EB1 /* StarShipModel.swift */,
+			);
+			path = StarWar;
+			sourceTree = "<group>";
+		};
+		64F321D226D166E500546EB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64F321D326D166E500546EB1 /* Movie */,
+				64F321D526D166E500546EB1 /* StarWar */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64F321D326D166E500546EB1 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				64F321D426D166E500546EB1 /* MovieService.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		64F321D526D166E500546EB1 /* StarWar */ = {
+			isa = PBXGroup;
+			children = (
+				64F321D626D166E500546EB1 /* StarWarService.swift */,
+			);
+			path = StarWar;
+			sourceTree = "<group>";
+		};
+		64F321EE26D1673500546EB1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64F321F026D1673D00546EB1 /* ViewModel */,
+				64F321EF26D1673900546EB1 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		64F321EF26D1673900546EB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64F321F126D1674800546EB1 /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64F321F026D1673D00546EB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64F321F326D1675000546EB1 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +674,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F3218126D166B000546EB1 /* UIImageView+.swift in Sources */,
+				64F321AE26D166DF00546EB1 /* Rx+.swift in Sources */,
+				64F321A526D166DF00546EB1 /* DomainConvertible.swift in Sources */,
+				64F321E726D166E500546EB1 /* MovieDetailModel.swift in Sources */,
+				64F321A926D166DF00546EB1 /* ProjectError.swift in Sources */,
+				64F321D726D166E500546EB1 /* MovieAPIRouter.swift in Sources */,
 				64F3213F26D1658F00546EB1 /* ViewController.swift in Sources */,
+				64F3217E26D166B000546EB1 /* NSObject+.swift in Sources */,
+				64F3217226D1669300546EB1 /* ErrorHandler.swift in Sources */,
 				64F3213B26D1658F00546EB1 /* AppDelegate.swift in Sources */,
-				64F3213D26D1658F00546EB1 /* SceneDelegate.swift in Sources */,
+				64F321E226D166E500546EB1 /* Single+Validation.swift in Sources */,
+				64F321E326D166E500546EB1 /* Single+DomainMapping.swift in Sources */,
+				64F321B126D166DF00546EB1 /* BlockUseCase.swift in Sources */,
+				64F321ED26D1672F00546EB1 /* YummyNewsApplication.swift in Sources */,
+				64F321DE26D166E500546EB1 /* RequestConvertible.swift in Sources */,
+				64F321E126D166E500546EB1 /* Single+Decodable+BaseResponse.swift in Sources */,
+				64F321AF26D166DF00546EB1 /* ExtendApplication.swift in Sources */,
+				64F321A626D166DF00546EB1 /* DomainErrorConvertible.swift in Sources */,
+				64F321B226D166DF00546EB1 /* StarWarUserCase.swift in Sources */,
+				64F321A326D166DF00546EB1 /* ErrorTracker.swift in Sources */,
+				64F3218426D166B000546EB1 /* UIColor+.swift in Sources */,
+				64F3217126D1669300546EB1 /* Constant.swift in Sources */,
+				64F321AB26D166DF00546EB1 /* MovieAttribute.swift in Sources */,
+				64F321EB26D166E500546EB1 /* StarWarService.swift in Sources */,
+				64F321E026D166E500546EB1 /* EndpointConvertible.swift in Sources */,
+				64F321F226D1674800546EB1 /* HomeViewController.swift in Sources */,
+				64F3217F26D166B000546EB1 /* String+.swift in Sources */,
+				64F321D926D166E500546EB1 /* Network.swift in Sources */,
+				64F321B326D166DF00546EB1 /* MovieUseCase.swift in Sources */,
+				64F321A426D166DF00546EB1 /* ActivityTracker.swift in Sources */,
+				64F321E626D166E500546EB1 /* MovieModel.swift in Sources */,
+				64F3217D26D166B000546EB1 /* ViewController+.swift in Sources */,
+				64F321DD26D166E500546EB1 /* NetworkConfiguration.swift in Sources */,
+				64F321E826D166E500546EB1 /* StarShipsModel.swift in Sources */,
+				64F321F426D1675000546EB1 /* HomeViewModel.swift in Sources */,
+				64F321AA26D166DF00546EB1 /* Movie.swift in Sources */,
+				64F3218326D166B000546EB1 /* UIImage+.swift in Sources */,
+				64F321B026D166DF00546EB1 /* ExtendApplication+Services.swift in Sources */,
+				64F3218226D166B000546EB1 /* View+.swift in Sources */,
+				64F321A726D166DF00546EB1 /* MovieInjectorType.swift in Sources */,
+				64F321DC26D166E500546EB1 /* NetworkError.swift in Sources */,
+				64F321A826D166DF00546EB1 /* StarWarInjectorType.swift in Sources */,
+				64F3218026D166B000546EB1 /* UIStackView+.swift in Sources */,
+				64F321EA26D166E500546EB1 /* MovieService.swift in Sources */,
+				64F321DF26D166E500546EB1 /* HTTPEncoder.swift in Sources */,
+				64F321E526D166E500546EB1 /* Sequence+DomainMapping.swift in Sources */,
+				64F321AC26D166DF00546EB1 /* MovieDetail.swift in Sources */,
+				64F321DB26D166E500546EB1 /* NetworkLogger.swift in Sources */,
+				64F321E926D166E500546EB1 /* StarShipModel.swift in Sources */,
+				64F321E426D166E500546EB1 /* Single+Decodable.swift in Sources */,
+				64F321DA26D166E500546EB1 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +902,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YummyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +910,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yumm.group.YummyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +921,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YummyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +929,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yumm.group.YummyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
