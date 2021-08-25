@@ -9,8 +9,16 @@
 import UIKit
 
 extension UIColor {
-    static let primary = UIColor("#eb1f3a")
-    static let secondary = UIColor("#4f49d9")
+    static let primary = UIColor(displayP3Red: 63, green: 63, blue: 63, alpha: 1)
+    static let secondary = UIColor(displayP3Red: 162, green: 167, blue: 173, alpha: 1)
+    static let uiBorder = UIColor("#e0e0e0")
+    static let uiNeutral = UIColor("#848788")
+    static let uiBg = UIColor("#f6f6f6")
+    static let solid = UIColor("#1B1D29")
+    static let textPrimary = UIColor("#434657")
+    static let textSecondary = UIColor("#82869E")
+    static let divided = UIColor("#000000", alpha: 0.3)
+    static let defaultCollectionBackground = UIColor("#F8F8FC")
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
@@ -37,4 +45,38 @@ extension UIColor {
                   blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
                   alpha: alpha)
     }
+    
+    static var red: UIColor {
+        return UIColor(red: 255, green: 59, blue: 48)
+    }
+    
+    static var orange: UIColor {
+        return UIColor(red: 255, green: 149, blue: 0)
+    }
+    
+    static var yellow: UIColor {
+        return UIColor(red: 255, green: 204, blue: 0)
+    }
+    
+    static var green: UIColor {
+        return UIColor(red: 76, green: 217, blue: 100)
+    }
+    
+    static var tealBlue: UIColor {
+        return UIColor(red: 90, green: 200, blue: 250)
+    }
+    
+    static var blue: UIColor {
+        return UIColor(red: 0, green: 122, blue: 255)
+    }
+    
+    static var purple: UIColor {
+        return UIColor(red: 88, green: 86, blue: 214)
+    }
+    
+    static var pink: UIColor {
+        return UIColor(red: 255, green: 45, blue: 85)
+    }
+    
+    static let colors: [UIColor] = [.red, .orange, .yellow, .green, .tealBlue, .blue, .purple, .pink]
 }

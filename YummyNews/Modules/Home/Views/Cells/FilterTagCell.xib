@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterTagCell" customModule="YummyNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-d5-SGR">
+                        <rect key="frame" x="0.0" y="38.5" width="191" height="32"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="b74-JX-pLB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhãn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dts-eb-TcD">
+                        <rect key="frame" x="12" y="46" width="167" height="17"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OIg-d5-SGR" secondAttribute="trailing" id="C9S-F1-iaQ"/>
+                <constraint firstItem="dts-eb-TcD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="It3-Zt-Ip3"/>
+                <constraint firstItem="dts-eb-TcD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NbS-vr-RnB"/>
+                <constraint firstAttribute="trailing" secondItem="dts-eb-TcD" secondAttribute="trailing" constant="12" id="P3s-DJ-1Yj"/>
+                <constraint firstItem="OIg-d5-SGR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="uDe-8r-23f"/>
+                <constraint firstItem="OIg-d5-SGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vF2-pQ-Ga3"/>
+            </constraints>
+            <size key="customSize" width="191" height="109"/>
+            <connections>
+                <outlet property="containerView" destination="OIg-d5-SGR" id="06B-83-Hm9"/>
+                <outlet property="containerViewHeightConstraint" destination="b74-JX-pLB" id="7xq-W3-WUn"/>
+                <outlet property="nameLabel" destination="dts-eb-TcD" id="6ej-p1-bhm"/>
+            </connections>
+            <point key="canvasLocation" x="-64.492753623188406" y="-0.33482142857142855"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,7 +8,11 @@
 
 import UIKit
 
+let BASE_URL = "http://api.mediastack.com"
+
 enum Constant {
+    
+    static let accessKey = "90764eede6f1d3ed6d9435e7d37df2ba"
     
     enum Size {
         static let screenWidth: CGFloat = UIScreen.main.bounds.width

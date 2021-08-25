@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectLanguageController" customModule="YummyNews" customModuleProvider="target">
+            <connections>
+                <outlet property="magneticView" destination="1XA-Sn-vcT" id="6jl-dj-sR4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select languages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-3o-CZ5">
+                    <rect key="frame" x="36" y="68" width="342" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the language that you want to read" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av9-6B-tUt">
+                    <rect key="frame" x="36" y="107.5" width="342" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XA-Sn-vcT" customClass="MagneticView" customModule="Magnetic">
+                    <rect key="frame" x="0.0" y="142.5" width="414" height="635.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZO-cJ-wF5">
+                    <rect key="frame" x="157" y="806" width="100" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Jie-lg-9it"/>
+                        <constraint firstAttribute="width" constant="100" id="bii-Ab-eqy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneButtonTapped:" destination="-1" eventType="touchUpInside" id="Yov-Jl-ahn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1XA-Sn-vcT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4gV-Dd-STz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="av9-6B-tUt" secondAttribute="trailing" constant="36" id="JFk-81-M44"/>
+                <constraint firstItem="1XA-Sn-vcT" firstAttribute="top" secondItem="av9-6B-tUt" secondAttribute="bottom" constant="16" id="WqY-qg-WSF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NaS-3o-CZ5" secondAttribute="trailing" constant="36" id="bzn-rT-N9i"/>
+                <constraint firstItem="av9-6B-tUt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="c7f-NS-ytZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5ZO-cJ-wF5" secondAttribute="bottom" constant="16" id="ddA-ic-FTq"/>
+                <constraint firstItem="1XA-Sn-vcT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gfN-yi-OKA"/>
+                <constraint firstItem="5ZO-cJ-wF5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h3B-vD-ozt"/>
+                <constraint firstItem="NaS-3o-CZ5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="pQV-kU-EqI"/>
+                <constraint firstItem="av9-6B-tUt" firstAttribute="top" secondItem="NaS-3o-CZ5" secondAttribute="bottom" constant="16" id="u0z-X8-OV8"/>
+                <constraint firstItem="NaS-3o-CZ5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="uWZ-ia-3cm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1XA-Sn-vcT" secondAttribute="bottom" constant="84" id="z1b-qf-Ccv"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

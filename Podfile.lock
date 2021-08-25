@@ -1,0 +1,81 @@
+PODS:
+  - Alamofire (5.4.3)
+  - CBZSplashView (1.0.0)
+  - Differentiator (4.0.1)
+  - FSPagerView (0.8.3)
+  - Kingfisher (6.3.1)
+  - Magnetic (3.2.1)
+  - MBProgressHUD (1.2.0)
+  - MGSwipeTableCell (1.6.11)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SideMenu (6.5.0)
+  - SnapKit (5.0.1)
+  - Swinject (2.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - CBZSplashView (~> 1.0.0)
+  - FSPagerView
+  - Kingfisher (~> 6.0)
+  - Magnetic
+  - MBProgressHUD (~> 1.2.0)
+  - MGSwipeTableCell
+  - "NSObject+Rx"
+  - RxCocoa (~> 5)
+  - RxDataSources
+  - RxSwift (~> 5)
+  - SideMenu (~> 6.0)
+  - SnapKit (~> 5.0.0)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CBZSplashView
+    - Differentiator
+    - FSPagerView
+    - Kingfisher
+    - Magnetic
+    - MBProgressHUD
+    - MGSwipeTableCell
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SideMenu
+    - SnapKit
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Magnetic: 02b9d6686160421cc4285140387419ec9ccab033
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Swinject: db795b8d6d78559b25fbebb0170d2635be1176e2
+
+PODFILE CHECKSUM: 3e19ffed8a6bde609418e3837e4366c27b1f4f73
+
+COCOAPODS: 1.10.2
