@@ -38,4 +38,10 @@ enum Category: String, CaseIterable {
 
 class HomeViewModel: BaseViewModel {
     
+    var selectedLanguages: [Language]
+    
+    init(selectedLanguages: [Language]) {
+        self.selectedLanguages = selectedLanguages
+    }
+    
 }

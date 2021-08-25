@@ -20,6 +20,7 @@ target 'YummyNews' do
   pod 'MGSwipeTableCell'
   pod 'FSPagerView'
   pod "Magnetic"
+  pod 'RealmSwift', '~>10'
   
   target 'YummyNewsTests' do
     inherit! :search_paths

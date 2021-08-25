@@ -11,6 +11,8 @@ import Magnetic
 
 class SelectLanguageController: UIViewController {
     
+    var window: UIWindow?
+    
     @IBOutlet weak var magneticView: MagneticView! {
         didSet {
             magnetic.magneticDelegate = self
@@ -21,6 +23,8 @@ class SelectLanguageController: UIViewController {
     var magnetic: Magnetic {
         return magneticView.magnetic
     }
+    
+    var selectedLanguages: [Language] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +33,12 @@ class SelectLanguageController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        for name in UIImage.names {
+        for name in Language.allCases {
             let color = UIColor.colors.randomItem()
-            let node = Node(text: name.capitalized, image: UIImage(named: name), color: color, radius: 40)
+            let node = Node(text: name.title,
+                            image: UIImage(named: name.rawValue),
+                            color: color,
+                            radius: 40)
             node.scaleToFitContent = true
             node.selectedColor = UIColor.colors.randomItem()
             magnetic.addChild(node)
@@ -39,6 +46,18 @@ class SelectLanguageController: UIViewController {
     }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
+        if let window = window {
+            let homeVC = HomeViewController.instantiateFromNib()
+            let nav = UINavigationController(rootViewController: homeVC)
+            nav.setNavigationBarHidden(true, animated: false)
+            window.rootViewController = nav
+            window.makeKeyAndVisible()
+        } else {
+            if !selectedLanguages.isEmpty {
+                UserDefaults.standard.setValue(selectedLanguages.map { $0.rawValue }, forKey: "selectedLanguages")
+            }
+            self.navigationController?.popViewController(animated: true)
+        }
         
     }
     
@@ -47,11 +66,14 @@ class SelectLanguageController: UIViewController {
 extension SelectLanguageController: MagneticDelegate {
     
     func magnetic(_ magnetic: Magnetic, didSelect node: Node) {
-        print("didSelect -> \(node)")
+        selectedLanguages.append(Language.getLanguage(from: node.name ?? ""))
     }
     
     func magnetic(_ magnetic: Magnetic, didDeselect node: Node) {
-        print("didDeselect -> \(node)")
+        let deSelectedItem = Language.getLanguage(from: node.name ?? "")
+        if let indx = selectedLanguages.firstIndex(where: { $0 == deSelectedItem }) {
+            selectedLanguages.remove(at: indx)
+        }
     }
     
     func magnetic(_ magnetic: Magnetic, didRemove node: Node) {
@@ -69,12 +91,6 @@ class ImageNode: Node {
     }
     override func selectedAnimation() {}
     override func deselectedAnimation() {}
-}
-
-extension UIImage {
-    
-    static let names: [String] = ["argentina", "bolivia", "brazil", "chile", "costa rica", "cuba", "dominican republic", "ecuador"]
-    
 }
 
 extension Array {

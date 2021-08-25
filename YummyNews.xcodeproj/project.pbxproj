@@ -113,6 +113,11 @@
 		64F6F38C26D55D1E00F47CCD /* SearchNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F38B26D55D1E00F47CCD /* SearchNewsViewModel.swift */; };
 		64F6F39026D5652E00F47CCD /* SelectLanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F38E26D5652E00F47CCD /* SelectLanguageController.swift */; };
 		64F6F39126D5652E00F47CCD /* SelectLanguageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F6F38F26D5652E00F47CCD /* SelectLanguageController.xib */; };
+		64F6F39526D6A5D800F47CCD /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39426D6A5D800F47CCD /* Language.swift */; };
+		64F6F39826D6B36100F47CCD /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39726D6B36100F47CCD /* BookmarksViewController.swift */; };
+		64F6F39A26D6B3D200F47CCD /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39926D6B3D200F47CCD /* BookmarksViewModel.swift */; };
+		64F6F39E26D6BEB500F47CCD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39C26D6BEB500F47CCD /* SplashViewController.swift */; };
+		64F6F39F26D6BEB500F47CCD /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */; };
 		6858213EF61E777BBA5A0C36 /* Pods_YummyNews_YummyNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20316AE0ADF7480543D2AEA6 /* Pods_YummyNews_YummyNewsUITests.framework */; };
 		A8C9F9A503FB82802DF6756B /* Pods_YummyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222EE5AD4B4976FE12522EC2 /* Pods_YummyNews.framework */; };
 		D7B3FCFB9AEDEE84542A72C4 /* Pods_YummyNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18041675E1B5425331A8D812 /* Pods_YummyNewsTests.framework */; };
@@ -254,6 +259,11 @@
 		64F6F38B26D55D1E00F47CCD /* SearchNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsViewModel.swift; sourceTree = "<group>"; };
 		64F6F38E26D5652E00F47CCD /* SelectLanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageController.swift; sourceTree = "<group>"; };
 		64F6F38F26D5652E00F47CCD /* SelectLanguageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectLanguageController.xib; sourceTree = "<group>"; };
+		64F6F39426D6A5D800F47CCD /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		64F6F39726D6B36100F47CCD /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		64F6F39926D6B3D200F47CCD /* BookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModel.swift; sourceTree = "<group>"; };
+		64F6F39C26D6BEB500F47CCD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		7657E4D7939C75C0DAAAA582 /* Pods-YummyNews-YummyNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNews-YummyNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-YummyNews-YummyNewsUITests/Pods-YummyNews-YummyNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92A289C8F8BB503FE3F03076 /* Pods-YummyNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNewsTests.release.xcconfig"; path = "Target Support Files/Pods-YummyNewsTests/Pods-YummyNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2DA2F929483C7BFE793A1B4 /* Pods-YummyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNews.release.xcconfig"; path = "Target Support Files/Pods-YummyNews/Pods-YummyNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -421,6 +431,8 @@
 		64F3218626D166C000546EB1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				64F6F39B26D6BC1000F47CCD /* SplashViewController */,
+				64F6F39626D6B34B00F47CCD /* Bookmarks */,
 				64F6F38D26D564D100F47CCD /* SelectLanguage */,
 				64F6F38626D55B3800F47CCD /* SearchNews */,
 				64F6F37D26D53FEB00F47CCD /* YummyWebView */,
@@ -664,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				64F321F326D1675000546EB1 /* HomeViewModel.swift */,
+				64F6F39426D6A5D800F47CCD /* Language.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -847,6 +860,24 @@
 			path = SelectLanguage;
 			sourceTree = "<group>";
 		};
+		64F6F39626D6B34B00F47CCD /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				64F6F39726D6B36100F47CCD /* BookmarksViewController.swift */,
+				64F6F39926D6B3D200F47CCD /* BookmarksViewModel.swift */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		64F6F39B26D6BC1000F47CCD /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64F6F39C26D6BEB500F47CCD /* SplashViewController.swift */,
+				64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
 		812150ACCA35340D4DFB9672 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1028,7 @@
 				640555B326D411E40005F651 /* YummyMenuViewController.xib in Resources */,
 				64F3223B26D29CE000546EB1 /* Roboto-Thin.ttf in Resources */,
 				64F3223A26D29CE000546EB1 /* Roboto-Bold.ttf in Resources */,
+				64F6F39F26D6BEB500F47CCD /* SplashViewController.xib in Resources */,
 				64F3223226D29CE000546EB1 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				64F3223326D29CE000546EB1 /* Roboto-Condensed.ttf in Resources */,
 				64F3221A26D29B4800546EB1 /* HomeViewController.xib in Resources */,
@@ -1153,6 +1185,7 @@
 				64F3220426D16DA900546EB1 /* PaginationModel.swift in Sources */,
 				64F321E126D166E500546EB1 /* Single+Decodable+BaseResponse.swift in Sources */,
 				64F3220226D16D1C00546EB1 /* NewsModel.swift in Sources */,
+				64F6F39526D6A5D800F47CCD /* Language.swift in Sources */,
 				64F321A626D166DF00546EB1 /* DomainErrorConvertible.swift in Sources */,
 				64F3220626D16DE400546EB1 /* NewsResponseModel.swift in Sources */,
 				64F3225826D2ADBE00546EB1 /* Font.swift in Sources */,
@@ -1170,6 +1203,7 @@
 				64F3225626D2A80200546EB1 /* CAPSPageMenu.swift in Sources */,
 				64F321D926D166E500546EB1 /* Network.swift in Sources */,
 				64F3226A26D2B99100546EB1 /* NewsListViewModel.swift in Sources */,
+				64F6F39826D6B36100F47CCD /* BookmarksViewController.swift in Sources */,
 				64F321A426D166DF00546EB1 /* ActivityTracker.swift in Sources */,
 				64F3221626D29A8D00546EB1 /* UITableView+.swift in Sources */,
 				64F6F38A26D55B5300F47CCD /* SearchNewsViewController.swift in Sources */,
@@ -1180,8 +1214,10 @@
 				64F3217D26D166B000546EB1 /* ViewController+.swift in Sources */,
 				64F321DD26D166E500546EB1 /* NetworkConfiguration.swift in Sources */,
 				64F321F426D1675000546EB1 /* HomeViewModel.swift in Sources */,
+				64F6F39E26D6BEB500F47CCD /* SplashViewController.swift in Sources */,
 				64F321AA26D166DF00546EB1 /* Movie.swift in Sources */,
 				64F321FF26D168BA00546EB1 /* BaseCoordinator.swift in Sources */,
+				64F6F39A26D6B3D200F47CCD /* BookmarksViewModel.swift in Sources */,
 				64F3218326D166B000546EB1 /* UIImage+.swift in Sources */,
 				64F3218226D166B000546EB1 /* View+.swift in Sources */,
 				64F6F38226D54CC100F47CCD /* NavYummyWebView.swift in Sources */,
