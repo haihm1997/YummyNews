@@ -20,8 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         splashVC.window = window
         window.rootViewController = nav
         window.makeKeyAndVisible()
-        self.window = window        
+        self.window = window
         return true
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        IAPManager.shared.stopObserving()
     }
 
 }

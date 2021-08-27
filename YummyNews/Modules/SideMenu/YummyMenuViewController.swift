@@ -17,11 +17,15 @@ enum YummyMenu {
 
 class YummyMenuViewController: BaseViewController {
     
+    @IBOutlet weak var premiumView: UIView!
+    
     var didSelectedMenu: ((_ menuType: YummyMenu) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
+        let isPremium = YummyNewsApplication.shared.isPurchased
+        premiumView.isHidden = isPremium
     }
     
     @IBAction func premiumButtonTapped(_ sender: Any) {

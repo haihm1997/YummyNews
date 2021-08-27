@@ -60,6 +60,8 @@
         <string>Roboto-Thin.ttf</string>
         <string>Roboto-ThinItalic.ttf</string>
     </array>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
     <key>NSAppTransportSecurity</key>
     <dict>
         <!--Not a recommended way, there are better solutions available-->

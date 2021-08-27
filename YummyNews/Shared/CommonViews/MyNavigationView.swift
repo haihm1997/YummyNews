@@ -101,7 +101,7 @@ class MyNavigationView: BaseCustomView {
         
         titleLabel.snp.makeConstraints { (maker) in
             maker.centerX.centerY.equalToSuperview()
-            maker.leading.equalToSuperview().inset(80)
+            maker.leading.equalToSuperview().inset(60)
         }
         
         navigationContainer.addSubview(headerView)

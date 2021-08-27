@@ -15,12 +15,14 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         if let firstTime = UserDefaults.standard.value(forKey: "isFirstTimeLaunch") as? Bool,
            !firstTime {
-            loadData {
-                let homeVC = HomeViewController.instantiateFromNib()
-                let nav = UINavigationController(rootViewController: homeVC)
-                nav.setNavigationBarHidden(true, animated: false)
-                window.rootViewController = nav
-                window.makeKeyAndVisible()
+            loadData { [weak self] in
+                DispatchQueue.main.async {
+                    let homeVC = HomeViewController.instantiateFromNib()
+                    let nav = UINavigationController(rootViewController: homeVC)
+                    nav.setNavigationBarHidden(true, animated: false)
+                    self?.window.rootViewController = nav
+                    self?.window.makeKeyAndVisible()
+                }
             }
         } else {
             let selectLanguageVC = SelectLanguageController()
@@ -30,9 +32,10 @@ class SplashViewController: UIViewController {
         }
     }
     
-    func loadData(completion: () -> Void) {
-        print("Loading cached data")
-        completion()
+    func loadData(completion: @escaping () -> Void) {
+        YummyNewsApplication.shared.appDidFinishLaunching {
+            completion()
+        }
     }
 
 }

@@ -64,7 +64,7 @@ class SearchNewsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        self.tableView.backgroundColor = .white
         bindViewModel()
     }
     

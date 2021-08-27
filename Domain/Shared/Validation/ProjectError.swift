@@ -14,6 +14,11 @@ public enum ProjectError: Error {
     case tokenInvalids
     case other(error: Error)
     case undefine
+    case noProductIDsFound
+    case noProductsFound
+    case paymentWasCancelled
+    case productRequestFailed
+    case premiumRegisterFailed
 }
 
 public extension ProjectError {
@@ -30,6 +35,16 @@ public extension ProjectError {
             return error.localizedDescription
         case .undefine:
             return "Undefined error!"
+        case .noProductIDsFound:
+            return "Không tìm thấy id sản phẩm."
+        case .noProductsFound:
+            return "Không tìm thấy sản phẩm nào."
+        case .productRequestFailed:
+            return "Không thể lấy thông tin sản phẩm. Vui lòng thử lại sau."
+        case .paymentWasCancelled:
+            return "Thanh toán đã bị huỷ."
+        case .premiumRegisterFailed:
+            return "Đăng ký Yummy Premium không thành công. Vui lòng thử lại sau"
         }
     }
     

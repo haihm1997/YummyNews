@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
         setupPageView()
     }
     
@@ -75,11 +75,13 @@ class HomeViewController: UIViewController {
         sideMenuVC.didSelectedMenu = { [weak self] menu in
             switch menu {
             case .premium:
-                ()
+                let premiumVC = PremiumViewController.instantiateFromNib()
+                self?.present(premiumVC, animated: true, completion: nil)
             case .favorite:
                 self?.openSelectCategories()
             case .bookmarked:
-                ()
+                let bookmarkVC = BookmarksViewController()
+                self?.navigationController?.pushViewController(bookmarkVC, animated: true)
             case .termOfUse(let url):
                 self?.openWeb(with: url, title: "Term of use")
             case .privaryPolicy(let url):
@@ -108,7 +110,7 @@ extension HomeViewController {
         return Binder(self) { target, news in
             let webVC = NavYummyWebView()
             webVC.url = news.url
-            webVC.title = news.category
+            webVC.title = news.title
             target.navigationController?.pushViewController(webVC, animated: true)
         }
     }

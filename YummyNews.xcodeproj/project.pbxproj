@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		640555B226D411E40005F651 /* YummyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640555B026D411E40005F651 /* YummyMenuViewController.swift */; };
 		640555B326D411E40005F651 /* YummyMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 640555B126D411E40005F651 /* YummyMenuViewController.xib */; };
+		646E242926D7F1160005192E /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E242726D7F1160005192E /* PremiumViewController.swift */; };
+		646E242A26D7F1160005192E /* PremiumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646E242826D7F1160005192E /* PremiumViewController.xib */; };
+		646E242E26D7FBE80005192E /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E242C26D7FBE80005192E /* IAPManager.swift */; };
+		646E242F26D7FBE80005192E /* SKProduct+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E242D26D7FBE80005192E /* SKProduct+.swift */; };
+		646E243226D7FEC20005192E /* PremiumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E243126D7FEC20005192E /* PremiumViewModel.swift */; };
 		64F3213B26D1658F00546EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3213A26D1658F00546EB1 /* AppDelegate.swift */; };
 		64F3213F26D1658F00546EB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3213E26D1658F00546EB1 /* ViewController.swift */; };
 		64F3214226D1658F00546EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F3214026D1658F00546EB1 /* Main.storyboard */; };
@@ -149,6 +154,11 @@
 		5A3799CE17FF070A1BA77D34 /* Pods-YummyNews-YummyNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNews-YummyNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-YummyNews-YummyNewsUITests/Pods-YummyNews-YummyNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		640555B026D411E40005F651 /* YummyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummyMenuViewController.swift; sourceTree = "<group>"; };
 		640555B126D411E40005F651 /* YummyMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YummyMenuViewController.xib; sourceTree = "<group>"; };
+		646E242726D7F1160005192E /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
+		646E242826D7F1160005192E /* PremiumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremiumViewController.xib; sourceTree = "<group>"; };
+		646E242C26D7FBE80005192E /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		646E242D26D7FBE80005192E /* SKProduct+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+.swift"; sourceTree = "<group>"; };
+		646E243126D7FEC20005192E /* PremiumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewModel.swift; sourceTree = "<group>"; };
 		64F3213726D1658F00546EB1 /* YummyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F3213A26D1658F00546EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F3213E26D1658F00546EB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +316,33 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
+		646E242626D7EE2E0005192E /* PremiumRegister */ = {
+			isa = PBXGroup;
+			children = (
+				646E243026D7FEB60005192E /* ViewModel */,
+				646E242726D7F1160005192E /* PremiumViewController.swift */,
+				646E242826D7F1160005192E /* PremiumViewController.xib */,
+			);
+			path = PremiumRegister;
+			sourceTree = "<group>";
+		};
+		646E242B26D7FBE80005192E /* Purchasing */ = {
+			isa = PBXGroup;
+			children = (
+				646E242C26D7FBE80005192E /* IAPManager.swift */,
+				646E242D26D7FBE80005192E /* SKProduct+.swift */,
+			);
+			path = Purchasing;
+			sourceTree = "<group>";
+		};
+		646E243026D7FEB60005192E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				646E243126D7FEC20005192E /* PremiumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		64F3212E26D1658F00546EB1 = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +468,7 @@
 		64F3218626D166C000546EB1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				646E242626D7EE2E0005192E /* PremiumRegister */,
 				64F6F39B26D6BC1000F47CCD /* SplashViewController */,
 				64F6F39626D6B34B00F47CCD /* Bookmarks */,
 				64F6F38D26D564D100F47CCD /* SelectLanguage */,
@@ -459,6 +497,7 @@
 		64F3218826D166DF00546EB1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				646E242B26D7FBE80005192E /* Purchasing */,
 				64F3218926D166DF00546EB1 /* Utils */,
 				64F3218C26D166DF00546EB1 /* Adapters */,
 				64F3219226D166DF00546EB1 /* Validation */,
@@ -1031,6 +1070,7 @@
 				64F6F39F26D6BEB500F47CCD /* SplashViewController.xib in Resources */,
 				64F3223226D29CE000546EB1 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				64F3223326D29CE000546EB1 /* Roboto-Condensed.ttf in Resources */,
+				646E242A26D7F1160005192E /* PremiumViewController.xib in Resources */,
 				64F3221A26D29B4800546EB1 /* HomeViewController.xib in Resources */,
 				64F3224026D29E6100546EB1 /* FilterTagCell.xib in Resources */,
 			);
@@ -1164,6 +1204,7 @@
 				64F3218126D166B000546EB1 /* UIImageView+.swift in Sources */,
 				64F321AE26D166DF00546EB1 /* Rx+.swift in Sources */,
 				64F3221926D29B4800546EB1 /* HomeViewController.swift in Sources */,
+				646E243226D7FEC20005192E /* PremiumViewModel.swift in Sources */,
 				64F321A526D166DF00546EB1 /* DomainConvertible.swift in Sources */,
 				64F321E726D166E500546EB1 /* MovieDetailModel.swift in Sources */,
 				64F321A926D166DF00546EB1 /* ProjectError.swift in Sources */,
@@ -1212,6 +1253,7 @@
 				64F3226426D2B27400546EB1 /* BaseTableViewCell.swift in Sources */,
 				64F321E626D166E500546EB1 /* MovieModel.swift in Sources */,
 				64F3217D26D166B000546EB1 /* ViewController+.swift in Sources */,
+				646E242926D7F1160005192E /* PremiumViewController.swift in Sources */,
 				64F321DD26D166E500546EB1 /* NetworkConfiguration.swift in Sources */,
 				64F321F426D1675000546EB1 /* HomeViewModel.swift in Sources */,
 				64F6F39E26D6BEB500F47CCD /* SplashViewController.swift in Sources */,
@@ -1219,6 +1261,7 @@
 				64F321FF26D168BA00546EB1 /* BaseCoordinator.swift in Sources */,
 				64F6F39A26D6B3D200F47CCD /* BookmarksViewModel.swift in Sources */,
 				64F3218326D166B000546EB1 /* UIImage+.swift in Sources */,
+				646E242E26D7FBE80005192E /* IAPManager.swift in Sources */,
 				64F3218226D166B000546EB1 /* View+.swift in Sources */,
 				64F6F38226D54CC100F47CCD /* NavYummyWebView.swift in Sources */,
 				64F3220E26D1727400546EB1 /* NewsService.swift in Sources */,
@@ -1243,6 +1286,7 @@
 				64F321AC26D166DF00546EB1 /* MovieDetail.swift in Sources */,
 				64F321FC26D168BA00546EB1 /* BaseCustomView.swift in Sources */,
 				64F321DB26D166E500546EB1 /* NetworkLogger.swift in Sources */,
+				646E242F26D7FBE80005192E /* SKProduct+.swift in Sources */,
 				64F321E426D166E500546EB1 /* Single+Decodable.swift in Sources */,
 				64F321DA26D166E500546EB1 /* Configs.swift in Sources */,
 			);
@@ -1422,6 +1466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL2MH7T892;
 				INFOPLIST_FILE = YummyNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1441,7 +1486,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL2MH7T892;
 				INFOPLIST_FILE = YummyNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1450,6 +1497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yumm.group.YummyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

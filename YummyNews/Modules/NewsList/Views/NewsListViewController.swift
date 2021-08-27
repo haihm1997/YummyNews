@@ -26,6 +26,7 @@ class NewListViewController: BaseViewController {
     
     override func loadView() {
         super.loadView()
+        self.view.backgroundColor = .white
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { maker in
             maker.top.bottom.leading.trailing.equalToSuperview()

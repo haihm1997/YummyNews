@@ -29,6 +29,7 @@ class BookmarksViewController: BaseViewController {
         
     override func loadView() {
         super.loadView()
+        self.view.backgroundColor = .white
         self.view.addSubview(navigationView)
         navigationView.snp.makeConstraints { (maker) in
             maker.top.leading.trailing.equalToSuperview()

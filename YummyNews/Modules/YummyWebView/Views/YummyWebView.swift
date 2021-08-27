@@ -22,6 +22,7 @@ class YummyWebView: BaseViewController {
     
     override func loadView() {
         super.loadView()
+        self.view.backgroundColor = .white
         self.view.addSubview(webView)
         webView.snp.makeConstraints { maker in
             maker.top.leading.trailing.bottom.equalToSuperview()
