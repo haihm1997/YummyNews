@@ -19,6 +19,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YummyMenuViewController" customModule="YummyNews" customModuleProvider="target">
             <connections>
+                <outlet property="premiumHeaderImage" destination="Isy-7Y-Sgr" id="ume-RF-5zi"/>
+                <outlet property="premiumHeaderLabel" destination="4a5-Mo-TOq" id="MQs-fx-DVI"/>
                 <outlet property="premiumView" destination="TKS-bx-p76" id="hZb-EO-po5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -32,46 +34,46 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsU-qm-5JB">
-                            <rect key="frame" x="0.0" y="52" width="414" height="150"/>
+                            <rect key="frame" x="0.0" y="52" width="414" height="156"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnF-li-j12">
-                                    <rect key="frame" x="167" y="16" width="80" height="80"/>
+                                    <rect key="frame" x="162" y="16" width="90" height="90"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_basic_plan" translatesAutoresizingMaskIntoConstraints="NO" id="Isy-7Y-Sgr">
-                                            <rect key="frame" x="12" y="12" width="56" height="56"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premium_img" translatesAutoresizingMaskIntoConstraints="NO" id="Isy-7Y-Sgr">
+                                            <rect key="frame" x="12" y="12" width="66" height="66"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="Isy-7Y-Sgr" firstAttribute="leading" secondItem="QnF-li-j12" secondAttribute="leading" constant="12" id="2Pq-fX-jTT"/>
-                                        <constraint firstAttribute="height" constant="80" id="Mz1-Ki-Eg1"/>
+                                        <constraint firstAttribute="height" constant="90" id="Mz1-Ki-Eg1"/>
                                         <constraint firstItem="Isy-7Y-Sgr" firstAttribute="top" secondItem="QnF-li-j12" secondAttribute="top" constant="12" id="PSp-2s-0Vr"/>
-                                        <constraint firstAttribute="width" constant="80" id="Z2l-9r-z8b"/>
+                                        <constraint firstAttribute="width" constant="90" id="Z2l-9r-z8b"/>
                                         <constraint firstAttribute="bottom" secondItem="Isy-7Y-Sgr" secondAttribute="bottom" constant="12" id="ejT-il-du1"/>
                                         <constraint firstAttribute="trailing" secondItem="Isy-7Y-Sgr" secondAttribute="trailing" constant="12" id="ruI-Ml-Mn8"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="40"/>
+                                            <real key="value" value="45"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-Mo-TOq">
-                                    <rect key="frame" x="159.5" y="108" width="95" height="23.5"/>
+                                    <rect key="frame" x="159.5" y="118" width="95" height="23.5"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ec-VF-vC0">
-                                    <rect key="frame" x="0.0" y="149" width="414" height="1"/>
+                                    <rect key="frame" x="0.0" y="155" width="414" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="DoX-UR-AcO"/>
@@ -83,7 +85,7 @@
                                 <constraint firstItem="QnF-li-j12" firstAttribute="centerX" secondItem="wsU-qm-5JB" secondAttribute="centerX" id="4yG-bJ-e7w"/>
                                 <constraint firstItem="3ec-VF-vC0" firstAttribute="leading" secondItem="wsU-qm-5JB" secondAttribute="leading" id="BDc-DI-zLg"/>
                                 <constraint firstAttribute="trailing" secondItem="3ec-VF-vC0" secondAttribute="trailing" id="hMc-qn-bZ3"/>
-                                <constraint firstAttribute="height" constant="150" id="iF2-5k-d89"/>
+                                <constraint firstAttribute="height" constant="156" id="iF2-5k-d89"/>
                                 <constraint firstAttribute="bottom" secondItem="3ec-VF-vC0" secondAttribute="bottom" id="o0a-sQ-xbd"/>
                                 <constraint firstItem="4a5-Mo-TOq" firstAttribute="top" secondItem="QnF-li-j12" secondAttribute="bottom" constant="12" id="pv5-Re-kIc"/>
                                 <constraint firstItem="QnF-li-j12" firstAttribute="top" secondItem="wsU-qm-5JB" secondAttribute="top" constant="16" id="r3L-i0-HHk"/>
@@ -102,7 +104,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2JP-68-2Lm">
-                            <rect key="frame" x="16" y="218" width="382" height="284"/>
+                            <rect key="frame" x="16" y="224" width="382" height="284"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-bx-p76">
                                     <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
@@ -340,11 +342,11 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_basic_plan" width="256" height="256"/>
         <image name="ic_bookmark" width="64" height="64"/>
         <image name="ic_categories" width="64" height="64"/>
         <image name="ic_premium" width="64" height="64"/>
         <image name="ic_term_condition" width="64" height="64"/>
+        <image name="premium_img" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

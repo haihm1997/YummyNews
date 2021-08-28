@@ -10,14 +10,11 @@ import RxSwift
 import RxRelay
 
 class BookmarksViewModel: BaseViewModel {
-    
-    let mockDatas: [News] = [News(), News(), News(), News(), News(), News(), News(), News(), News(), News(), News(), News()]
-    
+        
     let outNews = BehaviorRelay<[News]>(value: [])
     
     override init() {
         super.init()
-        outNews.accept(mockDatas)
     }
     
 }

@@ -9,7 +9,7 @@ import UIKit
 import SpriteKit
 import Magnetic
 
-class SelectLanguageController: UIViewController {
+class SelectLanguageController: BaseViewController {
     
     var window: UIWindow?
     
@@ -23,6 +23,8 @@ class SelectLanguageController: UIViewController {
     var magnetic: Magnetic {
         return magneticView.magnetic
     }
+    
+    var didSelectedLanguages: ((_ languages: [Language]) -> Void)?
     
     var selectedLanguages: [Language] = []
 
@@ -55,6 +57,7 @@ class SelectLanguageController: UIViewController {
         } else {
             if !selectedLanguages.isEmpty {
                 UserDefaults.standard.setValue(selectedLanguages.map { $0.rawValue }, forKey: "selectedLanguages")
+                didSelectedLanguages?(selectedLanguages)
             }
             self.navigationController?.popViewController(animated: true)
         }

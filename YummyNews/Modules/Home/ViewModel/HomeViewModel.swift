@@ -38,9 +38,16 @@ enum Category: String, CaseIterable {
 
 class HomeViewModel: BaseViewModel {
     
-    var selectedLanguages: [Language]
+    var selectedLanguages: [Language] = [.unitedStates]
     
-    init(selectedLanguages: [Language]) {
+    override init() {
+        super.init()
+        if let rawSavedLanguages = UserDefaults.standard.value(forKey: "isFirstTimeLaunch") as? [String] {
+            self.selectedLanguages = rawSavedLanguages.compactMap { Language(rawValue: $0) }
+        }
+    }
+    
+    func setSelectedLanguages(selectedLanguages: [Language]) {
         self.selectedLanguages = selectedLanguages
     }
     

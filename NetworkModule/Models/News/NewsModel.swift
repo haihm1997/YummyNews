@@ -8,12 +8,12 @@
 import Foundation
 
 struct NewsModel: Codable {
-    var author: String
+    var author: String?
     var title: String
-    var description: String
+    var description: String?
     var url: String
     var source: String
-    var image: String
+    var image: String?
     var category: String
     var language: String
     var country: String
@@ -22,7 +22,7 @@ struct NewsModel: Codable {
 
 extension NewsModel: DomainConvertible {
     func asDomain() -> News {
-        return News(author: author, title: title, desc: description,
+        return News(author: author ?? "", title: title, desc: description ?? "",
                     url: url, image: image, category: category, publishAt: published_at)
     }
 }

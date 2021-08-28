@@ -9,7 +9,8 @@ import Foundation
 import RxSwift
 
 protocol NewsServiceType {
-    func fetchNews(categories: [String], offset: Int) -> Single<NewsResponse>
+    func fetchNews(categories: [Category], countries: [Language], offset: Int) -> Single<NewsResponse>
+    func fetchNews(query: String, languages: [Language], offset: Int) -> Single<NewsResponse>
 }
 
 class NewsService {
@@ -27,8 +28,16 @@ class NewsService {
 
 extension NewsService: NewsServiceType {
     
-    func fetchNews(categories: [String], offset: Int) -> Single<NewsResponse> {
-        let params = NewsAPIParams(categories: categories, offset: offset)
+    func fetchNews(categories: [Category], countries languages: [Language], offset: Int) -> Single<NewsResponse> {
+        let params = NewsAPIParams(categories: categories, languages: languages, offset: offset)
+        return network.rx.request(NewsAPIRouter.fetchNews(params: params))
+            .validate()
+            .responseDecodable(of: NewsResponseModel.self)
+            .mapToDomain()
+    }
+    
+    func fetchNews(query: String, languages: [Language], offset: Int) -> Single<NewsResponse> {
+        let params = NewsAPIParams(query: query, languages: languages, offset: offset)
         return network.rx.request(NewsAPIRouter.fetchNews(params: params))
             .validate()
             .responseDecodable(of: NewsResponseModel.self)

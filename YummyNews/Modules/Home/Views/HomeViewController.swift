@@ -11,10 +11,16 @@ import SideMenu
 import RxSwift
 import RxCocoa
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     @IBOutlet weak var pageMenuContainer: UIView!
     var pageMenu: CAPSPageMenu!
+    
+    let viewModel = HomeViewModel()
+    
+    lazy var pageControllers: [NewListViewController] = {
+        return getControllers()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +41,7 @@ class HomeViewController: UIViewController {
             .scrollAnimationDurationOnMenuItemTap(700),
         ]
         
-        pageMenu = CAPSPageMenu(viewControllers: getControllers(),
+        pageMenu = CAPSPageMenu(viewControllers: pageControllers,
                                 frame: CGRect(x: 0, y: 0,
                                               width: Constant.Size.screenWidth,
                                               height: Constant.Size.screenHeight - 60 - Constant.SafeArea.topPadding),
@@ -49,13 +55,18 @@ class HomeViewController: UIViewController {
         pageMenu.didMove(toParent: self)
     }
     
-    private func getControllers() -> [UIViewController] {
-        var controllers: [UIViewController] = []
+    private func getControllers() -> [NewListViewController] {
+        var controllers: [NewListViewController] = []
         for item in Category.allCases {
             let vc = NewListViewController()
-            vc.viewModel = NewsListViewModel()
+            vc.viewModel = NewsListViewModel(languages: viewModel.selectedLanguages,
+                                             categories: [item])
             vc.title = item.title
             vc.didSelectedNews.bind(to: didSelectedNewsBinder).disposed(by: vc.rx.disposeBag)
+            vc.openRegisterPremiun = { [weak self] in
+                let premiumVC = PremiumViewController.instantiateFromNib()
+                self?.present(premiumVC, animated: true, completion: nil)
+            }
             controllers.append(vc)
         }
         return controllers
@@ -103,7 +114,26 @@ extension HomeViewController {
     
     private func openSelectCategories() {
         let categoriesVC = SelectLanguageController.instantiateFromNib()
+        categoriesVC.didSelectedLanguages = { [weak self] languages in
+            self?.viewModel.setSelectedLanguages(selectedLanguages: languages)
+            self?.forceReloadPages()
+        }
         navigationController?.pushViewController(categoriesVC, animated: true)
+    }
+    
+    func forceReloadPages() {
+        for i in 0..<pageControllers.count {
+            if i == pageMenu.currentPageIndex {
+                if let currentPage = pageControllers[safe: i] {
+                    currentPage.viewModel.setLanguages(languages: viewModel.selectedLanguages)
+                    currentPage.viewModel.inLoadMore.accept(0)
+                }
+            } else {
+                let page = pageControllers[safe: i]
+                page?.viewModel.setLanguages(languages: viewModel.selectedLanguages)
+                page?.forceReload = true
+            }
+        }
     }
     
     var didSelectedNewsBinder: Binder<News> {

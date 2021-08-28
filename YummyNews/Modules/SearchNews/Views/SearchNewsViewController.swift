@@ -37,11 +37,13 @@ class SearchNewsViewController: BaseViewController {
         return tableView
     }()
     
+    let emptyView = EmptyView()
+    
     let viewModel = SearchNewsViewModel()
     
     override func loadView() {
         super.loadView()
-        self.view.addSubviews(leftButton, searchBar, tableView)
+        self.view.addSubviews(leftButton, searchBar, tableView, emptyView)
         leftButton.snp.makeConstraints { maker in
             maker.width.height.equalTo(28)
             maker.leading.equalToSuperview().inset(12)
@@ -59,6 +61,11 @@ class SearchNewsViewController: BaseViewController {
             maker.top.equalTo(searchBar.snp.bottom).offset(16)
             maker.leading.trailing.bottom.equalToSuperview()
         }
+        
+        emptyView.snp.makeConstraints { maker in
+            maker.top.equalTo(searchBar.snp.bottom).offset(16)
+            maker.leading.trailing.bottom.equalToSuperview()
+        }
     }
     
     override func viewDidLoad() {
@@ -69,20 +76,39 @@ class SearchNewsViewController: BaseViewController {
     }
     
     private func bindViewModel() {
+        if #available(iOS 13.0, *) {
+            searchBar.searchTextField.rx.controlEvent(.editingDidEndOnExit)
+                .withLatestFrom(searchBar.rx.text.orEmpty)
+                .bind(to: viewModel.inKeyword)
+                .disposed(by: rx.disposeBag)
+        } else {
+            // Fallback on earlier versions
+        }
+                      
         viewModel.outNews.bind(to: tableView.rx.items(cellIdentifier: NewsCell.className, cellType: NewsCell.self)) {
             (row, element, cell) in
             cell.bind(data: element)
         }.disposed(by: rx.disposeBag)
+        viewModel.outError.bind(to: ErrorHandler.defaultAlertBinder(from: self)).disposed(by: rx.disposeBag)
+        viewModel.outActivity.bind(to: loadingBinder).disposed(by: rx.disposeBag)
+        viewModel.outNews.bind(to: didFetchData).disposed(by: rx.disposeBag)
         
         tableView.rx.modelSelected(News.self).bind(to: didSelectedNewsBinder).disposed(by: rx.disposeBag)
         leftButton.rx.tap.bind(to: didTapBack).disposed(by: rx.disposeBag)
+    }
+    
+    var didFetchData: Binder<[News]> {
+        return Binder(self) { target, result in
+            target.tableView.isHidden = result.isEmpty
+            target.emptyView.isHidden = !result.isEmpty
+        }
     }
     
     var didSelectedNewsBinder: Binder<News> {
         return Binder(self) { target, news in
             let webVC = NavYummyWebView()
             webVC.url = news.url
-            webVC.title = news.category
+            webVC.title = news.title
             target.navigationController?.pushViewController(webVC, animated: true)
         }
     }

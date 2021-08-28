@@ -22,7 +22,7 @@ class BaseCustomView: UIView {
     }
     
     func commonInit() {
-        
+        self.backgroundColor = .white
     }
     
 }

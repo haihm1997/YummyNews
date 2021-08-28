@@ -7,6 +7,14 @@
 
 import Foundation
 
+let randomImages: [String] = ["https://cdn.cnn.com/cnnnext/dam/assets/210826091248-uk-supermarket-empty-shelves-0723-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210818121645-06-afro-latinx-childrens-books-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210826094503-01-fulham-food-contamination-restricted-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210822101400-quinoa-crops-dubai-desert-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210820122128-ca-coronavirus-vaccine-booster-0819-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210704190844-white-house-exterior-0703-super-169.jpg",
+                              "https://cdn.cnn.com/cnnnext/dam/assets/210825095739-01-germany-darmstadt-poisoning-0824-restricted-super-169.jpg"]
+
 struct News {
     var author: String
     var title: String
@@ -26,12 +34,12 @@ struct News {
         self.publishAt = "2021-08-19T19:55:30"
     }
     
-    init(author: String, title: String, desc: String, url: String, image: String, category: String, publishAt: String) {
+    init(author: String, title: String, desc: String, url: String, image: String?, category: String, publishAt: String) {
         self.author = author
         self.title = title
         self.description = desc
         self.url = url
-        self.image = image
+        self.image = image ?? randomImages.randomItem()
         self.category = category
         self.publishAt = publishAt
     }

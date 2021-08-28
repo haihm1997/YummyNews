@@ -10,9 +10,22 @@ import UIKit
 
 let BASE_URL = "http://api.mediastack.com"
 
-enum Constant {
+class AccessKeyProvider {
     
-    static let accessKey = "90764eede6f1d3ed6d9435e7d37df2ba"
+    static let shared = AccessKeyProvider()
+    
+    let accessKeys: [String] = ["90764eede6f1d3ed6d9435e7d37df2ba",
+                                "0a9e852c33e48f0d8ce4e102abba4d07",
+                                "070c0bb78828223026c1c90a7f0e97fa",
+                                "99e732fd0d894aee1b842fda9cf31d91",
+                                "4c9cc7ab36bcdc424f15e6a1090d4861"]
+    
+    func generateAccessKey() -> String {
+        return accessKeys.randomItem()
+    }
+}
+
+enum Constant {
     
     enum Size {
         static let screenWidth: CGFloat = UIScreen.main.bounds.width

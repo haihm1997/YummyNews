@@ -31,5 +31,20 @@ class ErrorHandler {
         }
     }
     
+    static func showDefaultAlert(message: String, from controller: UIViewController, didDismiss: (() -> Void)?) {
+        let alert = UIAlertController(title: "YummyNews", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { action in
+            switch action.style{
+            case .default:
+                alert.dismiss(animated: true, completion: didDismiss)
+            case .cancel:
+                alert.dismiss(animated: true, completion: didDismiss)
+            case .destructive:
+                alert.dismiss(animated: true, completion: didDismiss)
+            }
+        }))
+        controller.present(alert, animated: true, completion: nil)
+    }
+    
 }
 

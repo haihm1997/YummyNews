@@ -18,6 +18,8 @@ enum YummyMenu {
 class YummyMenuViewController: BaseViewController {
     
     @IBOutlet weak var premiumView: UIView!
+    @IBOutlet weak var premiumHeaderImage: UIImageView!
+    @IBOutlet weak var premiumHeaderLabel: UILabel!
     
     var didSelectedMenu: ((_ menuType: YummyMenu) -> Void)?
 
@@ -26,6 +28,9 @@ class YummyMenuViewController: BaseViewController {
         self.view.backgroundColor = .white
         let isPremium = YummyNewsApplication.shared.isPurchased
         premiumView.isHidden = isPremium
+        premiumHeaderImage.image = isPremium ? UIImage(named: "premium_img") : UIImage(named: "ic_basic_plan")
+        premiumHeaderImage.layer.borderColor = isPremium ? UIColor.clear.cgColor : UIColor.black.cgColor
+        premiumHeaderLabel.text = isPremium ? "Premium Plan" : "Basic Plan"
     }
     
     @IBAction func premiumButtonTapped(_ sender: Any) {

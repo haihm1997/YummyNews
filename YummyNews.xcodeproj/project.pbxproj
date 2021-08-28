@@ -123,6 +123,18 @@
 		64F6F39A26D6B3D200F47CCD /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39926D6B3D200F47CCD /* BookmarksViewModel.swift */; };
 		64F6F39E26D6BEB500F47CCD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6F39C26D6BEB500F47CCD /* SplashViewController.swift */; };
 		64F6F39F26D6BEB500F47CCD /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */; };
+		64FBEF7026D95C2200CAB468 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF6F26D95C2200CAB468 /* EmptyView.swift */; };
+		64FBEF7E26D9635400CAB468 /* ESPullToRefresh+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7226D9635400CAB468 /* ESPullToRefresh+Manager.swift */; };
+		64FBEF7F26D9635400CAB468 /* ESRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7326D9635400CAB468 /* ESRefreshAnimator.swift */; };
+		64FBEF8026D9635400CAB468 /* ESRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7426D9635400CAB468 /* ESRefreshComponent.swift */; };
+		64FBEF8126D9635400CAB468 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64FBEF7626D9635400CAB468 /* Localizable.strings */; };
+		64FBEF8226D9635400CAB468 /* ESRefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7826D9635400CAB468 /* ESRefreshHeaderAnimator.swift */; };
+		64FBEF8326D9635400CAB468 /* icon_pull_to_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64FBEF7926D9635400CAB468 /* icon_pull_to_refresh_arrow@2x.png */; };
+		64FBEF8426D9635400CAB468 /* ESRefreshFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7A26D9635400CAB468 /* ESRefreshFooterAnimator.swift */; };
+		64FBEF8526D9635400CAB468 /* ESRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7B26D9635400CAB468 /* ESRefreshProtocol.swift */; };
+		64FBEF8626D9635400CAB468 /* ES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7C26D9635400CAB468 /* ES.swift */; };
+		64FBEF8726D9635400CAB468 /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF7D26D9635400CAB468 /* ESPullToRefresh.swift */; };
+		64FBEF8A26DA80DB00CAB468 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBEF8926DA80DB00CAB468 /* RealmManager.swift */; };
 		6858213EF61E777BBA5A0C36 /* Pods_YummyNews_YummyNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20316AE0ADF7480543D2AEA6 /* Pods_YummyNews_YummyNewsUITests.framework */; };
 		A8C9F9A503FB82802DF6756B /* Pods_YummyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222EE5AD4B4976FE12522EC2 /* Pods_YummyNews.framework */; };
 		D7B3FCFB9AEDEE84542A72C4 /* Pods_YummyNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18041675E1B5425331A8D812 /* Pods_YummyNewsTests.framework */; };
@@ -274,6 +286,18 @@
 		64F6F39926D6B3D200F47CCD /* BookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModel.swift; sourceTree = "<group>"; };
 		64F6F39C26D6BEB500F47CCD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		64FBEF6F26D95C2200CAB468 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		64FBEF7226D9635400CAB468 /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
+		64FBEF7326D9635400CAB468 /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshAnimator.swift; sourceTree = "<group>"; };
+		64FBEF7426D9635400CAB468 /* ESRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshComponent.swift; sourceTree = "<group>"; };
+		64FBEF7726D9635400CAB468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		64FBEF7826D9635400CAB468 /* ESRefreshHeaderAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		64FBEF7926D9635400CAB468 /* icon_pull_to_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_to_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		64FBEF7A26D9635400CAB468 /* ESRefreshFooterAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshFooterAnimator.swift; sourceTree = "<group>"; };
+		64FBEF7B26D9635400CAB468 /* ESRefreshProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshProtocol.swift; sourceTree = "<group>"; };
+		64FBEF7C26D9635400CAB468 /* ES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ES.swift; sourceTree = "<group>"; };
+		64FBEF7D26D9635400CAB468 /* ESPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPullToRefresh.swift; sourceTree = "<group>"; };
+		64FBEF8926DA80DB00CAB468 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		7657E4D7939C75C0DAAAA582 /* Pods-YummyNews-YummyNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNews-YummyNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-YummyNews-YummyNewsUITests/Pods-YummyNews-YummyNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92A289C8F8BB503FE3F03076 /* Pods-YummyNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNewsTests.release.xcconfig"; path = "Target Support Files/Pods-YummyNewsTests/Pods-YummyNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2DA2F929483C7BFE793A1B4 /* Pods-YummyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyNews.release.xcconfig"; path = "Target Support Files/Pods-YummyNews/Pods-YummyNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -404,6 +428,7 @@
 		64F3216C26D1669300546EB1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				64FBEF7126D9635400CAB468 /* ESPullToRefresh */,
 				64F6F38326D54D8600F47CCD /* CommonViews */,
 				64F3216D26D1669300546EB1 /* Constant */,
 				64F3216F26D1669300546EB1 /* ErrorHanding */,
@@ -497,6 +522,7 @@
 		64F3218826D166DF00546EB1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				64FBEF8826DA80CC00CAB468 /* Realm */,
 				646E242B26D7FBE80005192E /* Purchasing */,
 				64F3218926D166DF00546EB1 /* Utils */,
 				64F3218C26D166DF00546EB1 /* Adapters */,
@@ -878,6 +904,7 @@
 			isa = PBXGroup;
 			children = (
 				64F6F38926D55B5300F47CCD /* SearchNewsViewController.swift */,
+				64FBEF6F26D95C2200CAB468 /* EmptyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -915,6 +942,39 @@
 				64F6F39D26D6BEB500F47CCD /* SplashViewController.xib */,
 			);
 			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		64FBEF7126D9635400CAB468 /* ESPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				64FBEF7226D9635400CAB468 /* ESPullToRefresh+Manager.swift */,
+				64FBEF7326D9635400CAB468 /* ESRefreshAnimator.swift */,
+				64FBEF7426D9635400CAB468 /* ESRefreshComponent.swift */,
+				64FBEF7526D9635400CAB468 /* Animator */,
+				64FBEF7B26D9635400CAB468 /* ESRefreshProtocol.swift */,
+				64FBEF7C26D9635400CAB468 /* ES.swift */,
+				64FBEF7D26D9635400CAB468 /* ESPullToRefresh.swift */,
+			);
+			path = ESPullToRefresh;
+			sourceTree = "<group>";
+		};
+		64FBEF7526D9635400CAB468 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				64FBEF7626D9635400CAB468 /* Localizable.strings */,
+				64FBEF7826D9635400CAB468 /* ESRefreshHeaderAnimator.swift */,
+				64FBEF7926D9635400CAB468 /* icon_pull_to_refresh_arrow@2x.png */,
+				64FBEF7A26D9635400CAB468 /* ESRefreshFooterAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		64FBEF8826DA80CC00CAB468 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				64FBEF8926DA80DB00CAB468 /* RealmManager.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		812150ACCA35340D4DFB9672 /* Pods */ = {
@@ -1054,9 +1114,11 @@
 				64F3223626D29CE000546EB1 /* Roboto-LightItalic.ttf in Resources */,
 				64F3222F26D29CE000546EB1 /* Roboto-Regular.ttf in Resources */,
 				64F3214726D1659200546EB1 /* LaunchScreen.storyboard in Resources */,
+				64FBEF8326D9635400CAB468 /* icon_pull_to_refresh_arrow@2x.png in Resources */,
 				64F6F39126D5652E00F47CCD /* SelectLanguageController.xib in Resources */,
 				64F3223826D29CE000546EB1 /* Roboto-Italic.ttf in Resources */,
 				64F3223C26D29CE000546EB1 /* Roboto-Black.ttf in Resources */,
+				64FBEF8126D9635400CAB468 /* Localizable.strings in Resources */,
 				64F3223526D29CE000546EB1 /* Roboto-BoldItalic.ttf in Resources */,
 				64F3222E26D29CE000546EB1 /* Roboto-Light.ttf in Resources */,
 				64F3223026D29CE000546EB1 /* Roboto-MediumItalic.ttf in Resources */,
@@ -1200,6 +1262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FBEF7F26D9635400CAB468 /* ESRefreshAnimator.swift in Sources */,
 				64F3225026D2A80200546EB1 /* MenuItemView.swift in Sources */,
 				64F3218126D166B000546EB1 /* UIImageView+.swift in Sources */,
 				64F321AE26D166DF00546EB1 /* Rx+.swift in Sources */,
@@ -1209,6 +1272,8 @@
 				64F321E726D166E500546EB1 /* MovieDetailModel.swift in Sources */,
 				64F321A926D166DF00546EB1 /* ProjectError.swift in Sources */,
 				64F321FD26D168BA00546EB1 /* BaseViewModel.swift in Sources */,
+				64FBEF8026D9635400CAB468 /* ESRefreshComponent.swift in Sources */,
+				64FBEF8526D9635400CAB468 /* ESRefreshProtocol.swift in Sources */,
 				64F321D726D166E500546EB1 /* MovieAPIRouter.swift in Sources */,
 				64F3225326D2A80200546EB1 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
 				64F3213F26D1658F00546EB1 /* ViewController.swift in Sources */,
@@ -1219,6 +1284,7 @@
 				64F321E226D166E500546EB1 /* Single+Validation.swift in Sources */,
 				64F321E326D166E500546EB1 /* Single+DomainMapping.swift in Sources */,
 				64F6F39026D5652E00F47CCD /* SelectLanguageController.swift in Sources */,
+				64FBEF8226D9635400CAB468 /* ESRefreshHeaderAnimator.swift in Sources */,
 				64F321FB26D168BA00546EB1 /* BaseViewController.swift in Sources */,
 				64F321FE26D168BA00546EB1 /* BaseCollectionViewCell.swift in Sources */,
 				64F321ED26D1672F00546EB1 /* YummyNewsApplication.swift in Sources */,
@@ -1232,6 +1298,7 @@
 				64F3225826D2ADBE00546EB1 /* Font.swift in Sources */,
 				64F321A326D166DF00546EB1 /* ErrorTracker.swift in Sources */,
 				64F3218426D166B000546EB1 /* UIColor+.swift in Sources */,
+				64FBEF7E26D9635400CAB468 /* ESPullToRefresh+Manager.swift in Sources */,
 				64F3217126D1669300546EB1 /* Constant.swift in Sources */,
 				64F321AB26D166DF00546EB1 /* MovieAttribute.swift in Sources */,
 				64F321E026D166E500546EB1 /* EndpointConvertible.swift in Sources */,
@@ -1246,6 +1313,7 @@
 				64F3226A26D2B99100546EB1 /* NewsListViewModel.swift in Sources */,
 				64F6F39826D6B36100F47CCD /* BookmarksViewController.swift in Sources */,
 				64F321A426D166DF00546EB1 /* ActivityTracker.swift in Sources */,
+				64FBEF7026D95C2200CAB468 /* EmptyView.swift in Sources */,
 				64F3221626D29A8D00546EB1 /* UITableView+.swift in Sources */,
 				64F6F38A26D55B5300F47CCD /* SearchNewsViewController.swift in Sources */,
 				64F3226626D2B59300546EB1 /* Date+.swift in Sources */,
@@ -1253,6 +1321,7 @@
 				64F3226426D2B27400546EB1 /* BaseTableViewCell.swift in Sources */,
 				64F321E626D166E500546EB1 /* MovieModel.swift in Sources */,
 				64F3217D26D166B000546EB1 /* ViewController+.swift in Sources */,
+				64FBEF8726D9635400CAB468 /* ESPullToRefresh.swift in Sources */,
 				646E242926D7F1160005192E /* PremiumViewController.swift in Sources */,
 				64F321DD26D166E500546EB1 /* NetworkConfiguration.swift in Sources */,
 				64F321F426D1675000546EB1 /* HomeViewModel.swift in Sources */,
@@ -1261,6 +1330,7 @@
 				64F321FF26D168BA00546EB1 /* BaseCoordinator.swift in Sources */,
 				64F6F39A26D6B3D200F47CCD /* BookmarksViewModel.swift in Sources */,
 				64F3218326D166B000546EB1 /* UIImage+.swift in Sources */,
+				64FBEF8A26DA80DB00CAB468 /* RealmManager.swift in Sources */,
 				646E242E26D7FBE80005192E /* IAPManager.swift in Sources */,
 				64F3218226D166B000546EB1 /* View+.swift in Sources */,
 				64F6F38226D54CC100F47CCD /* NavYummyWebView.swift in Sources */,
@@ -1268,6 +1338,7 @@
 				64F3225426D2A80200546EB1 /* CAPSPageMenu+Options.swift in Sources */,
 				64F3221026D173A800546EB1 /* NewsResponse.swift in Sources */,
 				64F321A726D166DF00546EB1 /* MovieInjectorType.swift in Sources */,
+				64FBEF8626D9635400CAB468 /* ES.swift in Sources */,
 				64F321DC26D166E500546EB1 /* NetworkError.swift in Sources */,
 				64F3225D26D2B13300546EB1 /* NewsListViewController.swift in Sources */,
 				64F3224226D29F6800546EB1 /* FilterTagsListView.swift in Sources */,
@@ -1278,6 +1349,7 @@
 				64F3221426D173B800546EB1 /* Pagination.swift in Sources */,
 				64F3218026D166B000546EB1 /* UIStackView+.swift in Sources */,
 				64F3223F26D29E6100546EB1 /* FilterTagCell.swift in Sources */,
+				64FBEF8426D9635400CAB468 /* ESRefreshFooterAnimator.swift in Sources */,
 				64F321EA26D166E500546EB1 /* MovieService.swift in Sources */,
 				64F321DF26D166E500546EB1 /* HTTPEncoder.swift in Sources */,
 				64F3220B26D16F4900546EB1 /* NewsAPIParams.swift in Sources */,
@@ -1338,6 +1410,14 @@
 				64F3214626D1659200546EB1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64FBEF7626D9635400CAB468 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64FBEF7726D9635400CAB468 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -20,7 +20,11 @@ class NewListViewController: BaseViewController {
         return tableView
     }()
     
+    var openRegisterPremiun: (() -> Void)?
+    
     let didSelectedNews = PublishRelay<News>()
+    
+    var forceReload: Bool = false
     
     var viewModel: NewsListViewModel!
     
@@ -37,6 +41,27 @@ class NewListViewController: BaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         bindViewModel()
+        
+        tableView.es.addInfiniteScrolling { [weak self] in
+            guard let self = self else { return }
+            if self.viewModel.outNews.value.count >= 360 {
+                self.tableView.es.noticeNoMoreData()
+            } else {
+                let currentOffset = self.viewModel.inLoadMore.value ?? 0
+                self.viewModel.inLoadMore.accept(currentOffset + 1)
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if forceReload {
+            viewModel.inLoadMore.accept(0)
+        } else {
+            if viewModel.inLoadMore.value == nil {
+                viewModel.inLoadMore.accept(0)
+            }
+        }
     }
     
     private func bindViewModel() {
@@ -44,9 +69,24 @@ class NewListViewController: BaseViewController {
             (row, element, cell) in
             cell.bind(data: element)
         }.disposed(by: rx.disposeBag)
+        viewModel.outNews.bind(to: didFetchNewsBinder).disposed(by: rx.disposeBag)
+        viewModel.outActivity.bind(to: loadingBinder).disposed(by: rx.disposeBag)
+        viewModel.outError.bind(to: ErrorHandler.defaultAlertBinder(from: self)).disposed(by: rx.disposeBag)
         
         tableView.rx.modelSelected(News.self).bind(to: didSelectedNews).disposed(by: rx.disposeBag)
     }
     
+    var didFetchNewsBinder: Binder<[News]> {
+        return Binder(self) { target, _ in
+            target.forceReload = false
+            if !target.viewModel.couldLoadMore {
+                ErrorHandler.showDefaultAlert(message: "Please register Premium Plan to read more news",
+                                              from: target) {
+                    target.openRegisterPremiun?()
+                }
+            }
+            target.tableView.es.stopLoadingMore()
+        }
+    }
 }
 
