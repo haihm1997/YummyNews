@@ -6,14 +6,8 @@ PODS:
   - Kingfisher (6.3.1)
   - Magnetic (3.2.1)
   - MBProgressHUD (1.2.0)
-  - MGSwipeTableCell (1.6.11)
   - "NSObject+Rx (5.1.0)":
     - RxSwift (~> 5.1)
-  - Realm (10.12.0):
-    - Realm/Headers (= 10.12.0)
-  - Realm/Headers (10.12.0)
-  - RealmSwift (10.12.0):
-    - Realm (= 10.12.0)
   - RxCocoa (5.1.3):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -35,9 +29,7 @@ DEPENDENCIES:
   - Kingfisher (~> 6.0)
   - Magnetic
   - MBProgressHUD (~> 1.2.0)
-  - MGSwipeTableCell
   - "NSObject+Rx"
-  - RealmSwift (~> 10)
   - RxCocoa (~> 5)
   - RxDataSources
   - RxSwift (~> 5)
@@ -54,10 +46,7 @@ SPEC REPOS:
     - Kingfisher
     - Magnetic
     - MBProgressHUD
-    - MGSwipeTableCell
     - "NSObject+Rx"
-    - Realm
-    - RealmSwift
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -74,10 +63,7 @@ SPEC CHECKSUMS:
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Magnetic: 02b9d6686160421cc4285140387419ec9ccab033
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
-  Realm: 32488213acb44660539c619d620cec1bac046166
-  RealmSwift: 0abdca6231d5ff8a4f84cef9c1121ef95a483faf
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
@@ -86,6 +72,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Swinject: db795b8d6d78559b25fbebb0170d2635be1176e2
 
-PODFILE CHECKSUM: ac020169c9234162a996bc450e01acf1b759d90f
+PODFILE CHECKSUM: 095fc1bfa44bddd661dfec1d34002d16cf345da6
 
 COCOAPODS: 1.10.2

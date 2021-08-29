@@ -25,10 +25,15 @@ class SplashViewController: BaseViewController {
                 }
             }
         } else {
-            let selectLanguageVC = SelectLanguageController()
-            selectLanguageVC.window = window
-            navigationController?.pushViewController(selectLanguageVC, animated: false)
-            UserDefaults.standard.setValue(false, forKey: "isFirstTimeLaunch")
+            loadData {
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    let selectLanguageVC = SelectLanguageController()
+                    selectLanguageVC.window = self.window
+                    self.navigationController?.pushViewController(selectLanguageVC, animated: false)
+                    UserDefaults.standard.setValue(false, forKey: "isFirstTimeLaunch")
+                }
+            }
         }
     }
     

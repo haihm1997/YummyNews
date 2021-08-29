@@ -17,10 +17,8 @@ target 'YummyNews' do
   pod 'RxDataSources'
   pod 'SideMenu', '~> 6.0'
   pod 'CBZSplashView', '~> 1.0.0'
-  pod 'MGSwipeTableCell'
   pod 'FSPagerView'
   pod "Magnetic"
-  pod 'RealmSwift', '~>10'
   
   target 'YummyNewsTests' do
     inherit! :search_paths
